@@ -21,3 +21,4 @@ const eqArrays = function(arr1, arr2) {
 
 // TEST CODE
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
+assertEqual(eqArrays([1, 2, 3], [1, 2, 12]), false);
