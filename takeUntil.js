@@ -20,12 +20,19 @@ const assertArraysEqual = function(actual, expected) {
 
 const takeUntil = function(array, callback) {
   let goodStuff = [];
-  for (let i = 0; i < array.length; i++) {
+  for (const item of array) {
+    if(callback(item)) {
+      break;
+    }
+    goodStuff.push(item);
+  }
+  
+/*  for (let i = 0; i < array.length; i++) {
     if(callback(array[i])) {
       break;
     }
-    goodStuff.push(array[i]);
-  }
+    goodStuff.push(array[i]);  for loop.
+  }*/
   return goodStuff;
 };
 
