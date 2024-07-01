@@ -20,3 +20,9 @@ const countLetters = function(sentence) {
   }
   return repeat;
 };
+
+// TEST CASES
+const result = countLetters('Hello World');
+assertEqual(result['H'], 1);
+assertEqual(result['e'], 1);
+assertEqual(result['l'], 3);
