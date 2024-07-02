@@ -1,8 +1,8 @@
 {
-  "name": "lotide",
+  "name": "@moastra/lotide",
   "version": "1.0.0",
-  "description": "",
-  "main": "assertArraysEqual.js",
+  "description": "Basic functions for JavaScript.",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/moastra/lotide.git"
   },
-  "author": "",
+  "author": "Mathew Mastromonaco mathewmastromonaco@gmail.com",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/moastra/lotide/issues"
