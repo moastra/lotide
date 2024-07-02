@@ -2,7 +2,7 @@ const tail = require("../tail")
 const assert = require("chai").assert;
 const result = tail(["Hello", "Lighthouse", "Labs"]);
 
-describe("#head", () => {
+describe("#tail", () => {
   it("returns 2 for the length ['Hello', 'Lighthouse', 'Labs']", () => {
     assert.deepEqual(result.length,2);
   });
