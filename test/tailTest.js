@@ -1,8 +1,16 @@
 const tail = require("../tail")
-const assertArraysEqual = require("../assertArraysEqual");
-
-// TEST CODE
+const assert = require("chai").assert;
 const result = tail(["Hello", "Lighthouse", "Labs"]);
-assertArraysEqual(result.length, 2); // ensure we get back two elements
-assertArraysEqual(result[0], "Lighthouse"); // ensure first element is "Lighthouse"
-assertArraysEqual(result[1], "Labs"); // ensure second element is "Labs"
+
+describe("#head", () => {
+  it("returns 2 for the length ['Hello', 'Lighthouse', 'Labs']", () => {
+    assert.deepEqual(result.length,2);
+  });
+  it("return 'Lighthouse' for result[0]", () => {
+    assert.deepEqual(result[0], "Lighthouse");
+  });
+  it("return 'Labs' for result[1]", () => {
+    assert.deepEqual(result[1], "Labs");
+  });
+});
+
